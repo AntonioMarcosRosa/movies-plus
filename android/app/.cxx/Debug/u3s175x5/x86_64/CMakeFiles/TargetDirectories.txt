@@ -1,0 +1,2 @@
+C:/cursos/movies-plus/android/app/.cxx/Debug/u3s175x5/x86_64/CMakeFiles/edit_cache.dir
+C:/cursos/movies-plus/android/app/.cxx/Debug/u3s175x5/x86_64/CMakeFiles/rebuild_cache.dir

@@ -1,43 +1,81 @@
-# Miscellaneous
+# ------------------------------
+# General
+# ------------------------------
 *.class
 *.log
 *.pyc
 *.swp
 .DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-migrate_working_dir/
+.env
+*.orig       # arquivos de merge conflitante
+*.rej        # arquivos de patch rejeitado
+*.sublime-workspace
 
-# IntelliJ related
+# ------------------------------
+# IDEs e editores
+# ------------------------------
+
+# IntelliJ / Android Studio
 *.iml
 *.ipr
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# VSCode (descomente se quiser ignorar)
+.vscode/
 
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# Atom
+.atom/
+
+# Outras ferramentas
+.history
+.svn/
+migrate_working_dir/
+
+# ------------------------------
+# Flutter / Dart
+# ------------------------------
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
-.pub-cache/
+.packages
 .pub/
-/build/
+.pub-cache/
+build/
+**/doc/api/
+**/ios/Flutter/.last_build_id
 
-# Symbolication related
-app.*.symbols
-
-# Obfuscation related
-app.*.map.json
-
-# Android Studio will place build artifacts here
+# ------------------------------
+# Android
+# ------------------------------
 /android/app/debug
 /android/app/profile
 /android/app/release
+.gradle
+local.properties
+
+# ------------------------------
+# iOS
+# ------------------------------
+**/ios/Pods/
+**/ios/Runner.xcworkspace/
+**/ios/Flutter/Flutter.framework/
+**/ios/Flutter/Flutter.podspec
+**/ios/.symlinks/
+**/ios/Flutter/Generated.xcconfig
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# ------------------------------
+# Build e artefatos temporários
+# ------------------------------
+app.*.symbols
+app.*.map.json
+*.tmp
+*.temp
+
+# ------------------------------
+# Arquivos de crash / relatórios
+# ------------------------------
+crashlytics-build.log
+firebase-debug.log
